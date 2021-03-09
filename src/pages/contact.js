@@ -4,10 +4,12 @@ import wechat from "../images/wechat.jpg"
 import fujiwe from "../images/wechat-fuji.jpg"
 import whatsapp from "../images/whatsapp.jpg"
 import fujiwhat from "../images/whatsapp-fuji.jpg"
+import ContactList from "../components/contact-form"
 
 export default function Contact() {
   return (
     <Layout tab="Contact">
+      <ContactList />
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <img className="h-24 mb-2" src={wechat} alt="Wechat" />
