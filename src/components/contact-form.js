@@ -1,5 +1,5 @@
 import React from "react"
-import fujiwe from "../images/fuji-nye.jpg"
+import fujiwe from "../images/fuji-red.jpg"
 import ReactPlayer from 'react-player/file'
 
 class ContactForm extends React.Component {
@@ -157,6 +157,13 @@ class ContactForm extends React.Component {
               <div className="px-4 sm:px-0">
                 <img className="h-96 shadow-lg rounded max-w-full h-auto align-middle border-none" src={fujiwe} alt="Fuji Pic" />
               </div>
+              <h2 className="text-2xl font-bold text-gray-700 mt-2 mb-2">你想成為行業的頂峰嗎？</h2>
+              <ul className="list-disc">
+              <li>如何實踐三年財富自由永久退休計劃</li>
+              <li>我們會提供培訓免費課程給你</li>
+              <li>你想擁有一個有共同目標的團隊和你一起攜手佔領市場， 用最短的時間達到行業的頂峰</li>
+              <li>跟隨Fuji Suzuki都是我的Mentor,她的提點給我一個肯定， 啟發到我成為一個成功的企業家...你準備好了嗎？</li>
+              </ul>
             </div>
 
             <div className="mt-5 md:mt-0 md:col-span-2">
@@ -165,7 +172,7 @@ class ContactForm extends React.Component {
                   <div className="px-4 py-5 bg-white sm:p-6">
                     <div className="grid grid-cols-1 gap-6">
                       <div className="col-span-6 sm:col-span-3">
-                        <h1 className="text-2xl font-bold text-gray-700 ">我們可以發送免費教培訓片到那個電郵地址我會有一個免費培訓課程發送給你</h1>
+                        <h1 className="text-2xl font-bold text-gray-700">我們可以發送免費教培訓片到那個電郵地址我會有一個免費培訓課程發送給你</h1>
                       </div>
                       <div className="col-span-6 sm:col-span-3">
                         <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">你的名字... (e.g. Fuji)</label>
@@ -183,7 +190,7 @@ class ContactForm extends React.Component {
                   </div>
                   <div className="px-4 py-3 bg-gray-50 text-left sm:px-6">
                     <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    立即預留座位
+                    我要立即登記
                     </button>
                   </div>
                 </div>
@@ -200,10 +207,10 @@ class ContactForm extends React.Component {
               <div className="px-4 sm:px-0 align-top">
                 <ReactPlayer width="100%" className="my-auto"
                   controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-                  poster="https://video.fujisuzuki.com/funnel/new1/0715-2a.jpg"
+                  poster="https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.jpg"
                   url={[
-                    {src: 'https://video.fujisuzuki.com/funnel/new1/0715-2a1.mp4', type: 'video/mp4'},
-                    {src: 'https://video.fujisuzuki.com/funnel/new1/0715-2a1.webm', type: 'video/webm'}
+                    {src: 'https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.mp4', type: 'video/mp4'},
+                    {src: 'https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.webm', type: 'video/webm'}
                   ]}
                 />
               </div>
@@ -309,17 +316,16 @@ class ContactForm extends React.Component {
             <div className="mt-5 md:mt-0 md:col-span-2">
                 <div className="shadow overflow-hidden sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
-                      <h1 className="text-5xl font-bold text-gray-700 ">預約成功！</h1>
+                      <h1 className="text-5xl font-bold text-gray-700 mb-6">預約成功！</h1>
+                      <p className="mb-4">**重要: 我已經發送確認郵件包括通話時間和日期到您的電郵信箱，</p>
+                      <p className="mb-4">為了令電話諮詢幫助你達到更佳效果，請先觀看頁面最下面兩個視頻... </p>
+                      <p className="mb-4">我會在您選擇的時間通過電話準時致電給您，請確保準時接聽。如果您超過 5分鐘未能接聽，電話預約將被取消，您將無法重新安排另一個專業諮詢。</p>
+                      <p className="mb-4">請確保您在安靜及專注的環境下通話， 不要在街上或搭車途中接聽電話， 如果您在嘈雜的環境下接聽電話，我們將會取消電話會議，而不會另作安排。</p>
+                      <p className="mb-4">我期待幫助您拓展業務並取得突破性的成功！</p>
+                      <p className="mb-4">Fuji</p>
                     </div>
                     <div>
-                      <ReactPlayer width="100%" className="align-top"
-                        controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-                        poster="https://video.fujisuzuki.com/funnel/0621-success.jpg"
-                        url={[
-                          {src: 'https://video.fujisuzuki.com/funnel/0621-success.mp4', type: 'video/mp4'},
-                          {src: 'https://video.fujisuzuki.com/funnel/0621-success.webm', type: 'video/webm'}
-                        ]}
-                      />
+                      
                     </div>
                 </div>
             </div>
