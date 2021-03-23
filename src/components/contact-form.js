@@ -205,7 +205,7 @@ class ContactForm extends React.Component {
 
             <div className="md:col-span-1 flex flex-wrap justify-center">
               <div className="px-4 sm:px-0 align-top">
-                <ReactPlayer width="100%" className="my-auto"
+                <ReactPlayer width="100%" className=""
                   controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
                   poster="https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.jpg"
                   url={[

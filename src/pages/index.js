@@ -10,9 +10,9 @@ import { css } from "@emotion/react"
 export default function Home({ data }) {
   return (
     <Layout tab="Team">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <ReactPlayer playing width="100%" height="100%" className="my-auto"
+      <div className="">
+        <div className="md:w-1/2">
+          <ReactPlayer playing width="100%" height="100%" className=""
             controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
             poster="https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page1.jpg"
             url={[
@@ -21,7 +21,7 @@ export default function Home({ data }) {
             ]}
           />
         </div>
-        <div>
+        <div className="">
           <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6">你想成為行業的頂峰嗎？</h1>
           <ul className="list-none leading-8">
             <li><FaCheck /> 如何實踐三年財富自由永久退休計劃</li>
@@ -33,7 +33,7 @@ export default function Home({ data }) {
           </ul>
           <ButtonGreen />
         </div>
-        <div className="col-span-2 md:px-10">
+        <div className="col-span-2 md:px-10 mt-6">
           <p className="mb-4 font-bold">2021 年「企業戰略策劃」
 今年，確保你生意不跌反升，突破樽頸位，甚至超越以往嘅業績...！</p>
           <p className="mb-4">免費出席我的長達 1小時網上機密招商培訓，來到取得整個「GROWTH 企業戰略策劃」嘅所有工具、策略、技巧... 然後直接用喺你嘅生意上面（就好似 Copy and Paste 咁），令 2021 年成為你生意突破嘅轉捩點！當中會有</p>
@@ -72,6 +72,14 @@ export default function Home({ data }) {
             >
               <Post image={node.frontmatter.image} title={node.frontmatter.title}>
                 <p>{node.excerpt}</p>
+                <ReactPlayer width="100%" height="100%" className="md:h-1/2"
+                  controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+                  poster={node.frontmatter.poster}
+                  url={[
+                    {src: node.frontmatter.mp4, type: 'video/mp4'},
+                    {src: node.frontmatter.webm, type: 'video/webm'}
+                  ]}
+                />
               </Post>
             </Link>
           </div>
@@ -95,6 +103,9 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             image
+            mp4
+            webm
+            poster
           }
           fields {
             slug
