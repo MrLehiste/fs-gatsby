@@ -22,7 +22,6 @@ export default function Home({ data }) {
           />
         </div>
         <div className="">
-          <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6">[走出困局  – 步向理想人生]</h1>
           <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6">你想成為行業的頂峰嗎？</h1>
           <ul className="list-none leading-8">
             <li><FaCheck /> 如何實踐三年財富自由永久退休計劃</li>
