@@ -10,7 +10,7 @@ export default function Contact() {
     <Layout tab="Contact">
       <ContactList />
       <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
-        <div className="md:col-span-1 flex flex-wrap justify-center">
+        <div className="md:col-span-1 flex flex-wrap justify-center hidden">
           <img className="h-4/5" src={teamcal} alt="Team Calerie" />
         </div>
       </div>
