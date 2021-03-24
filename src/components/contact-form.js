@@ -197,19 +197,6 @@ class ContactForm extends React.Component {
         <div className={this.state.form2class} id="divForm2">
           <div className="md:grid md:grid-cols-3 md:gap-6">
 
-            <div className="md:col-span-1 flex flex-wrap justify-center">
-              <div className="px-4 sm:px-0 align-top">
-                <ReactPlayer width="100%" className=""
-                  controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-                  poster="https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.jpg"
-                  url={[
-                    {src: 'https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.mp4', type: 'video/mp4'},
-                    {src: 'https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.webm', type: 'video/webm'}
-                  ]}
-                />
-              </div>
-            </div>
-
             <div className="mt-5 md:mt-0 md:col-span-2">
               <form onSubmit={this.handleSubmit2}>
                 <div className="shadow overflow-hidden sm:rounded-md">
@@ -307,6 +294,18 @@ class ContactForm extends React.Component {
 
         <div className={this.state.form3class} id="divForm3">
           <div className="md:grid md:grid-cols-3 md:gap-6 justify-center">
+            <div className="md:col-span-1 flex flex-wrap justify-center">
+              <div className="px-4 sm:px-0 align-top">
+                <ReactPlayer width="100%" className=""
+                  controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+                  poster="https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.jpg"
+                  url={[
+                    {src: 'https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.mp4', type: 'video/mp4'},
+                    {src: 'https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page3.webm', type: 'video/webm'}
+                  ]}
+                />
+              </div>
+            </div>
             <div className="mt-5 md:mt-0 md:col-span-2">
                 <div className="shadow overflow-hidden sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
@@ -323,7 +322,6 @@ class ContactForm extends React.Component {
                     </div>
                 </div>
             </div>
-
           </div>
         </div>{/* divForm3 */}
         
