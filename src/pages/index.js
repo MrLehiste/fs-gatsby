@@ -22,7 +22,18 @@ export default function Home({ data }) {
           />
         </div>
         <div className="">
-          <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6">[走出困局  – 步向理想人生] </h1>
+          <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6">你想成為行業的頂峰嗎？</h1>
+          <ul className="list-none leading-8">
+            <li><FaCheck /> 如何實踐三年財富自由永久退休計劃</li>
+            <li><FaCheck /> 我們會提供培訓免費課程給你</li>
+            <li><FaCheck /> 你想擁有一個有共同目標的團隊和你一起攜手佔領市場， 用最短的時間達到行業的頂峰</li>
+            <li><FaCheck /> 跟隨Fuji Suzuki都是我的Mentor,她的提點給我一個肯定， 啟發到我成為一個成功的企業家...你準備好了嗎？</li>
+          </ul>
+          
+
+
+
+
           <ButtonGreen />
         </div>
         <div className="col-span-2 md:px-10 mt-6">
