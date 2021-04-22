@@ -1,5 +1,6 @@
 import React from "react"
-import fujiwe from "../images/fuji-red.jpg"
+import fuji1 from "../images/fuji-black.jpg"
+import fuji2 from "../images/fuji-white.jpg"
 import ReactPlayer from 'react-player/file'
 
 class ContactForm extends React.Component {
@@ -155,7 +156,7 @@ class ContactForm extends React.Component {
 
             <div className="md:col-span-1 flex flex-wrap justify-center">
               <div className="px-4 sm:px-0">
-                <img className="h-96 shadow-lg rounded max-w-full h-auto align-middle border-none" src={fujiwe} alt="Fuji Pic" />
+                <img className="h-96 shadow-lg rounded max-w-full h-auto align-middle border-none" src={fuji1} alt="Fuji Pic" />
               </div>
               <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6">[走出困局  – 步向理想人生] </h1>
             </div>
@@ -196,6 +197,13 @@ class ContactForm extends React.Component {
 
         <div className={this.state.form2class} id="divForm2">
           <div className="md:grid md:grid-cols-3 md:gap-6">
+
+            <div className="md:col-span-1 flex flex-wrap justify-center">
+              <div className="px-4 sm:px-0">
+                <img className="h-96 shadow-lg rounded max-w-full h-auto align-middle border-none" src={fuji2} alt="Fuji Pic" />
+              </div>
+              <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6"></h1>
+            </div>
 
             <div className="mt-5 md:mt-0 md:col-span-2">
               <form onSubmit={this.handleSubmit2}>
