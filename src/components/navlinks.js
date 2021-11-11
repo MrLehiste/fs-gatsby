@@ -3,12 +3,12 @@ import { Link } from "gatsby"
 
 export default function NavLinks(props) {
   const isMobile = props.isMobile;
-  const tabs = ['Team', 'Contact', 'Exclusive Course'];
+  const tabs = ['Team', 'Contact', 'Exclusive Course', 'NMN iHealth'];
   const seltab = props.tab;
   if(isMobile){ 
     const listItems = tabs.map((t) =>
       <Link to={"/" + (t === "Team" ? '' : t.toLowerCase().replace(' ', '-'))}
-        className={t == seltab ? "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" : "text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"}>
+        className={t === seltab ? "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" : "text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"}>
         {t}
       </Link>
     );
