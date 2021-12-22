@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import fujiwe from "../images/wechat-fuji.jpg"
 import fujiwhat from "../images/whatsapp-fuji.jpg"
 import teamcal from "../images/team-gold.jpg"
+import team8 from "../images/team8.jpg"
 import ContactList from "../components/contact-form"
 
 export default function Contact() {
@@ -11,7 +12,7 @@ export default function Contact() {
       <ContactList />
       <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
         <div className="md:col-span-1 flex flex-wrap justify-center items-center mt-4">
-          <img className="" src={teamcal} alt="Team Calerie" />
+          <img className="" src={team8} alt="Team 8" />
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">

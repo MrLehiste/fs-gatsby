@@ -6,6 +6,7 @@ import ButtonGreen from '../components/buttongreen'
 import Post from "../components/post"
 import { Link, graphql } from "gatsby"
 import { css } from "@emotion/react"
+import team8 from "../images/team8.jpg"
 
 export default function Home({ data }) {
   return (
@@ -58,8 +59,8 @@ export default function Home({ data }) {
           <p className="mb-4">其實所有最高級別嘅學員都係同你一樣，唔想浪費青春行冤枉路。</p>
           <p className="mb-4">我唔知道你 2021 有冇咩計劃...</p>
           <p className="mb-4">不過如果你唔想「見步行步」、抱住「摸住石頭過河」嘅話...</p>
-          <p className="mb-4">我建議你輕輕鬆鬆坐低，畀我同我團隊直接支援你，點樣一步一步同你計劃 2021 年嘅生意路線：</p>
-
+          <p className="mb-4">我建議你輕輕鬆鬆坐低，畀我同我團隊直接支援你，點樣一步一步同你計劃 2022 年嘅生意路線：</p>
+          <img className="" src={team8} alt="Team 8" />
         </div>
       </div>
       
