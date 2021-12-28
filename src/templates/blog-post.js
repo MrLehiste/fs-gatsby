@@ -13,7 +13,7 @@ export default function BlogPost({ data }) {
       <Post image={node.frontmatter.image} title={node.frontmatter.title}>
         <div dangerouslySetInnerHTML={{ __html: node.html }} />
         <ReactPlayer width="100%" height="100%" className="md:h-1/2"
-          controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+          controls={true} //{['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
           poster={node.frontmatter.poster}
           url={[
             {src: node.frontmatter.mp4, type: 'video/mp4'},

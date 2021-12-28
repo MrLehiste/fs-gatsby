@@ -1,9 +1,14 @@
-import React from "react"
+import React, {useEffect} from "react"
 import logo from "../images/fs.png"
 import Footer from "../components/footer"
 import NavLinks from "../components/navlinks"
+import { useLocation } from '@reach/router';
+import { immutableItem } from "../components/useLocalStorage"
+
 
 export default function Layout(props) {
+  const landingPage = immutableItem('ref', useLocation().pathname);
+  console.log('landingPage-ref', landingPage);
   return (
     <div>
         <nav className="bg-gray-800">

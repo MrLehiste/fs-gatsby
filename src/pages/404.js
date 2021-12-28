@@ -10,7 +10,7 @@ export default function Contact() {
           <img className="h-96" src={fujiwe} alt="Fuji Pic" />
         </div>
         <div>
-          <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6">Comin soon...</h1>
+          <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6">Oops, page not found. Please email if necessary.</h1>
           <p>
             <a href="mailto:info@fujisuzuki.com">✉️ fuji@fujisuzuki.com</a>
           </p>

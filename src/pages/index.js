@@ -14,7 +14,7 @@ export default function Home({ data }) {
       <div className="">
         <div className="md:w-1/2">
           <ReactPlayer playing width="100%" height="100%" className=""
-            controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+            controls={true} //{['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
             poster="https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page1.jpg"
             url={[
               {src: 'https://s3.amazonaws.com/media.fujisuzuki.com/funnel/page1.mp4', type: 'video/mp4'},
@@ -77,7 +77,7 @@ export default function Home({ data }) {
               <Post image={node.frontmatter.image} title={node.frontmatter.title}>
                 <p>{node.excerpt}</p>
                 <ReactPlayer width="100%" height="100%" className="md:h-1/2"
-                  controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+                  controls={true} //{['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
                   poster={node.frontmatter.poster}
                   url={[
                     {src: node.frontmatter.mp4, type: 'video/mp4'},
