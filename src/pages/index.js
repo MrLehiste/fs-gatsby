@@ -8,7 +8,7 @@ import { Link, graphql } from "gatsby"
 import { css } from "@emotion/react"
 import team8 from "../images/team8.jpg"
 import teamcal from "../images/team-cal.jpg"
-import teamgold from "../images/team-gold.jpg"
+import teamnewu from "../images/team-newu.jpg"
 
 export default function Home({ data }) {
   return (
@@ -63,7 +63,7 @@ export default function Home({ data }) {
           <p className="mb-4">我建議你輕輕鬆鬆坐低，畀我同我團隊直接支援你，點樣一步一步同你計劃 2022 年嘅生意路線：</p>
           <img className="" src={team8} alt="Team 8" />
           <img className="" src={teamcal} alt="Team Cal" />
-          <img className="" src={teamgold} alt="Team Gold" />
+          <img className="" src={teamnewu} alt="Team Gold" />
         </div>
       </div>
       
