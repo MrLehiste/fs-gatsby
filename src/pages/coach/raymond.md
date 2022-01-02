@@ -1,7 +1,7 @@
 ---
 title: 'Raymond'
 date: '2019-01-07'
-image: 'https://media.fujisuzuki.com/team/gold/raymond.png'
+image: 'https://media.fujisuzuki.com/team/title/raymond.png'
 ---
 我經營微商生意多年，一直都在尋找一個源源不盡有被動收入的平台，我選擇
 **跟隨Fuji 卓越團隊系統，她的領導能力令我佩服**，還有她的團隊自動吸客系統，還她的自動培訓系統，還有她的自動管理系統，都是現代網絡時代的需求，令我明白有多重要
