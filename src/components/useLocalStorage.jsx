@@ -6,7 +6,8 @@ export const getItem = item => {
 }
 
 export const setItem = ( item, value ) => {
-  window.localStorage.setItem(item, value)
+  if(isBrowser())
+    window.localStorage.setItem(item, value)
 }
 
 export const immutableItem = ( item, value ) => {
