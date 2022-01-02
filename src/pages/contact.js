@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import fujiwe from "../images/wechat-fuji.jpg"
 import fujiwhat from "../images/whatsapp-fuji.jpg"
-import teamcal from "../images/team-gold.jpg"
 import team8 from "../images/team8.jpg"
 import ContactList from "../components/contact-form"
 

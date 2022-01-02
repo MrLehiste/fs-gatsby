@@ -18,7 +18,8 @@ export default function Footer() {
             </div>
             <div className="p-5 w-48 ">
                 <div className="text-xs uppercase text-gray-500 font-medium">Contact us</div>
-                <Link className="my-3 block whitespace-nowrap" to="/contact">✉️ info@fujisuzuki.com <span className="text-teal-600 text-xs p-1" /></Link> 
+                <Link className="my-3 block whitespace-nowrap" to="/contact">
+                  <span role="img" aria-label="email-icon">✉️</span> info@fujisuzuki.com <span className="text-teal-600 text-xs p-1" /></Link> 
             </div>
           </div>
         </div>

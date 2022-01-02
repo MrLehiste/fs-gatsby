@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React from "react"
 import logo from "../images/fs.png"
 import Footer from "../components/footer"
 import NavLinks from "../components/navlinks"

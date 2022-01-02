@@ -12,7 +12,7 @@ export default function Contact() {
         <div>
           <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6">Comin soon...</h1>
           <p>
-            <a href="mailto:info@fujisuzuki.com">✉️ fuji@fujisuzuki.com</a>
+            <a href="mailto:info@fujisuzuki.com"><span role="img" aria-label="email-icon">✉️</span> fuji@fujisuzuki.com</a>
           </p>
         </div>
       </div>

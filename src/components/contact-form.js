@@ -2,13 +2,16 @@ import React from "react"
 import fuji1 from "../images/fuji-black.jpg"
 import fuji2 from "../images/fuji-white.jpg"
 import ReactPlayer from 'react-player/file'
+import { immutableItem } from "../components/useLocalStorage"
 
 class ContactForm extends React.Component {
     constructor(props) {
       super(props);
+      const landingPage = immutableItem('ref', 'fuji-funnel');
       this.state = {
         form_state: 1,
         hub_id: "0",
+        ref: landingPage,
         first_name: '',
         last_name: '',
         email_address: '',
@@ -50,6 +53,7 @@ class ContactForm extends React.Component {
         const formdata = {
           "data": {
             "properties": {
+              "ref": this.state.ref,
               "email": this.state.email_address,
               "firstname": this.state.first_name,
               "phone": this.state.phone
@@ -66,7 +70,7 @@ class ContactForm extends React.Component {
             body: JSON.stringify(formdata)
         };
         console.log(formdata);
-        fetch('https://8bftgvw7vl.execute-api.us-east-1.amazonaws.com/dev/hubspot', requestOptions)
+        fetch('https://8bftgvw7vl.execute-api.us-east-1.amazonaws.com/dev/fs-prospects', requestOptions)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -99,6 +103,7 @@ class ContactForm extends React.Component {
         const form2data = {
           "data": {
             "properties": {
+              "ref": this.state.ref,
               "email": this.state.email_address,
               "firstname": this.state.first_name,
               "lastname": this.state.last_name,
@@ -128,7 +133,7 @@ class ContactForm extends React.Component {
           body: JSON.stringify(form2data)
       };
       console.log(form2data);
-      fetch('https://8bftgvw7vl.execute-api.us-east-1.amazonaws.com/dev/hubspot', requestOptions)
+      fetch('https://8bftgvw7vl.execute-api.us-east-1.amazonaws.com/dev/fs-prospects', requestOptions)
           .then(response => response.json())
           .then(data => {
               console.log(data);
@@ -202,7 +207,7 @@ class ContactForm extends React.Component {
               <div className="px-4 sm:px-0">
                 <img className="h-96 shadow-lg rounded max-w-full h-auto align-middle border-none" src={fuji2} alt="Fuji Pic" />
               </div>
-              <h1 className="text-2xl font-bold text-gray-700 mt-2 mb-6"></h1>
+              
             </div>
 
             <div className="mt-5 md:mt-0 md:col-span-2">
