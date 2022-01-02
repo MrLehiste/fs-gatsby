@@ -39,9 +39,9 @@ export default function Home({ data }) {
           <ButtonGreen />
         </div>
         <div className="col-span-2 md:px-10 mt-6">
-          <p className="mb-4 font-bold">2021 年「企業戰略策劃」
+          <p className="mb-4 font-bold">2022 年「企業戰略策劃」
 今年，確保你生意不跌反升，突破樽頸位，甚至超越以往嘅業績...！</p>
-          <p className="mb-4">免費出席我的長達 1小時網上機密招商培訓，來到取得整個「GROWTH 企業戰略策劃」嘅所有工具、策略、技巧... 然後直接用喺你嘅生意上面（就好似 Copy and Paste 咁），令 2021 年成為你生意突破嘅轉捩點！當中會有</p>
+          <p className="mb-4">免費出席我的長達 1小時網上機密招商培訓，來到取得整個「GROWTH 企業戰略策劃」嘅所有工具、策略、技巧... 然後直接用喺你嘅生意上面（就好似 Copy and Paste 咁），令 2022 年成為你生意突破嘅轉捩點！當中會有</p>
           <p className="mb-4">過往已經有超過 數名會員，利用「GROWTH 企業戰略策劃」，獲得非常卓越嘅業績：</p>
           <p className="mb-4">不過... 你都可以做得到！因為...</p>
           <p className="font-bold">「GROWTH 企業戰略策劃」就好似你嘅軍師，令你更清楚目前嘅形勢，協助你制定合適嘅戰略，例如：</p>
@@ -58,7 +58,7 @@ export default function Home({ data }) {
           <p className="mb-4">原因係... 教嗰個都唔係嗰個界別成功嘅人！</p>
           <p className="mb-4">（即係... 我想打 NBA，但係無搵 Michael Jordan 拜師學藝，反而搵咗個體育老師教我... ）</p>
           <p className="mb-4">其實所有最高級別嘅學員都係同你一樣，唔想浪費青春行冤枉路。</p>
-          <p className="mb-4">我唔知道你 2021 有冇咩計劃...</p>
+          <p className="mb-4">我唔知道你 2022 有冇咩計劃...</p>
           <p className="mb-4">不過如果你唔想「見步行步」、抱住「摸住石頭過河」嘅話...</p>
           <p className="mb-4">我建議你輕輕鬆鬆坐低，畀我同我團隊直接支援你，點樣一步一步同你計劃 2022 年嘅生意路線：</p>
           <img className="" src={team8} alt="Team 8" />
