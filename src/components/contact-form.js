@@ -74,17 +74,6 @@ class ContactForm extends React.Component {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                const jdata = JSON.parse(data);
-                var hubid = "0";
-                if(jdata.message){
-                  console.log("HAS message");
-                  hubid = jdata.message.split('ID: ')[1];
-                }
-                else{
-                  console.log("New user");
-                  hubid = jdata.id;
-                }
-                console.log("ID>", hubid);
                 this.setState({
                   form_state: this.state.form_state + 1,
                   form1class: 'hidden', 
