@@ -10,7 +10,6 @@ class ContactForm extends React.Component {
       const landingPage = immutableItem('ref', 'fuji-funnel');
       this.state = {
         form_state: 1,
-        hub_id: "0",
         ref: landingPage,
         first_name: '',
         last_name: '',
@@ -77,8 +76,7 @@ class ContactForm extends React.Component {
                 this.setState({
                   form_state: this.state.form_state + 1,
                   form1class: 'hidden', 
-                  form2class: 'mt-5 md:mt-0 md:col-span-2',
-                  hub_id: hubid
+                  form2class: 'mt-5 md:mt-0 md:col-span-2'
               });
             });
         
@@ -110,10 +108,6 @@ class ContactForm extends React.Component {
               "when_start": this.state.when_start,
               "your_specialty": this.state.your_specialty
             }
-          },
-          "options":{
-            "path": "/crm/v3/objects/contacts/" + this.state.hub_id,
-            "method": "PATCH"
           }
         };
         const requestOptions = {
