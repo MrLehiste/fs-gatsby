@@ -17,9 +17,9 @@ export default function Home({ data }) {
         <div className="md:w-1/2">
           <ReactPlayer playing width="100%" height="100%" className=""
             controls={true} //{['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-            poster="https://media.fujisuzuki.com/funnel/welcome2022.jpg"
+            poster="https://media.fujisuzuki.com/funnel/fuji2022.jpg"
             url={[
-              {src: 'https://media.fujisuzuki.com/funnel/welcome2022.mp4', type: 'video/mp4'}
+              {src: 'https://media.fujisuzuki.com/funnel/fuji2022.mp4', type: 'video/mp4'}
             ]}
           />
         </div>
