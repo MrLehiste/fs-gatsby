@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export default function NavLinks(props) {
   const isMobile = props.isMobile;
-  const tabs = ['Team', 'Contact', 'Exclusive Course', 'NMN iHealth'];
+  const tabs = ['Team', 'Contact', 'Exclusive Course'];
   const seltab = props.tab;
   if(isMobile){ 
     const listItems = tabs.map((t) =>
