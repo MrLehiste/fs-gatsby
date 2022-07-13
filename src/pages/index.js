@@ -17,9 +17,9 @@ export default function Home({ data }) {
         <div className="md:w-1/2">
           <ReactPlayer playing width="100%" height="100%" className=""
             controls={true} //{['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-            poster="https://media.fujisuzuki.com/funnel/fuji2022.jpg"
+            config={ { file: { attributes: { poster: 'https://media.fujisuzuki.com/funnel/funnel-2022-07-12.jpg' } } } }
             url={[
-              {src: 'https://media.fujisuzuki.com/funnel/fuji2022.mp4', type: 'video/mp4'}
+              {src: 'https://media.fujisuzuki.com/funnel/funnel-2022-07-12.mp4', type: 'video/mp4'}
             ]}
           />
         </div>
